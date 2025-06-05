@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohamed Lemine Mohamed - CV en ligne</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="description" content="CV en ligne de Mohamed Lemine Mohamed, Élève Ingénieur en Statistique et Ingénierie des Données à l'École Supérieure Polytechnique de Nouakchott">
+    <meta name="keywords" content="Mohamed Lemine Mohamed, CV, Data Science, Statistique, Ingénierie des Données, ESP Nouakchott">
+    <meta name="author" content="Mohamed Lemine Mohamed">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1 class="main-title">MOHAMED LEMINE MOHAMED</h1>
+            <p class="subtitle">Élève Ingénieur en Statistique et Ingénierie des Données</p>
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/mohamed-lemine-mohamed" target="_blank" class="social-btn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/mohamed-lemine" target="_blank" class="social-btn">
+                    <i class="fab fa-github"></i>
+                </a>
+                <button class="social-btn" onclick="showSection('cv')">
+                    <i class="fas fa-file-text"></i>
+                </button>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="navigation">
+                <button class="nav-btn active" onclick="showSection('intro')" data-section="intro">À propos</button>
+                <button class="nav-btn" onclick="showSection('projects')" data-section="projects">Projets</button>
+                <button class="nav-btn" onclick="showSection('experiences')" data-section="experiences">Expériences</button>
+                <button class="nav-btn" onclick="showSection('skills')" data-section="skills">Compétences</button>
+                <button class="nav-btn" onclick="showSection('cv')" data-section="cv">CV</button>
+            </nav>
+
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <a href="mailto:23014@esp.mr" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    23014@esp.mr
+                </a>
+                <a href="tel:+22227202827" class="contact-link">
+                    <i class="fas fa-phone"></i>
+                    +222 27 20 28 27
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- À propos Section -->
+        <section id="intro" class="content-section active">
+            <div class="container">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <div class="profile-image">
+                            <img src="images/profile.jpg" alt="Mohamed Lemine Mohamed" class="profile-img">
+                        </div>
+                        <h2 class="section-title">À propos de moi</h2>
+                    </div>
+                    <div class="card-content">
+                        <p class="intro-text">
+                            Élève ingénieur en deuxième année à l'École Supérieure Polytechnique de Nouakchott, département
+                            Statistique et Ingénierie des Données (SID). Passionné par l'analyse de données, la programmation et
+                            l'innovation technologique.
+                        </p>
+                        <p class="intro-text">
+                            J'ai développé une expertise solide en data science, machine learning et développement web à travers
+                            mes projets académiques et professionnels. Mon parcours m'a permis d'acquérir une vision globale des
+                            enjeux de la transformation numérique et de l'analyse de données.
+                        </p>
+
+                        <div class="separator"></div>
+
+                        <div class="interests-section">
+                            <h3 class="subsection-title">Centres d'intérêt</h3>
+                            <div class="interest-item">
+                                <div class="interest-dot green"></div>
+                                <div>
+                                    <strong>Football :</strong> Passionné de football, suivi régulier des grands tournois et compétitions
+                                </div>
+                            </div>
+                            <div class="interest-item">
+                                <div class="interest-dot red"></div>
+                                <div>
+                                    <strong>Cinéma :</strong> Grand amateur de films, particulièrement d'action et de comédie
+                                </div>
+                            </div>
+                            <div class="interest-item">
+                                <div class="interest-dot purple"></div>
+                                <div>
+                                    <strong>Poèmes :</strong> Grand amateur de poèmes arabes
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="separator"></div>
+
+                        <div class="association-section">
+                            <h3 class="subsection-title">Vie associative</h3>
+                            <div class="association-item">
+                                <i class="fas fa-users association-icon"></i>
+                                <div>
+                                    <strong>Membre, Association Jeunesse de Sava :</strong>
+                                    <p class="association-period">Sava • 2018 - Présent</p>
+                                    <p>
+                                        Participation active à l'organisation d'activités communautaires et coordination des tournois de
+                                        football durant les vacances scolaires
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projets Section -->
+        <section id="projects" class="content-section">
+            <div class="container">
+                <h2 class="page-title">Projets Académiques</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-globe project-icon blue"></i>
+                            <div>
+                                <h3 class="project-title">Plateforme de traitement de données géostatistiques</h3>
+                                <p class="project-subtitle">Projet Django - ESP, Nouakchott • Oct 2024 - Présent</p>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">
+                                Développement d'une plateforme Django pour l'analyse de données géologiques. Permet l'importation,
+                                la gestion, l'analyse et la modélisation des données de forage. Intégration de visualisations
+                                interactives (cartes, graphiques) pour l'exploration.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Django</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">Visualisation de données</span>
+                            </div>
+                            <a href="https://github.com/mohamed-lemine/geostat-platform" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Voir le code source
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-chart-line project-icon green"></i>
+                            <div>
+                                <h3 class="project-title">Application de calcul de l'INPC</h3>
+                                <p class="project-subtitle">Projet ANSADE - Nouakchott • Jan 2024 - Mai 2024</p>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">
+                                Migration de l'application utilisée par l'ANSADE pour stocker les données collectées périodiquement en vue de calculer l'Indice National des Prix à la Consommation (INPC). Automatisation du processus de calcul de l'indice et de génération des rapports statistiques.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Statistiques</span>
+                                <span class="tag">Automatisation</span>
+                                <span class="tag">Analyse de données</span>
+                            </div>
+                            <a href="https://github.com/Medlemin14/INPC-Project" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Voir le code source
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-header">
+                            <i class="fas fa-database project-icon purple"></i>
+                            <div>
+                                <h3 class="project-title">DataMineSynergy-App</h3>
+                                <p class="project-subtitle">Projet d'Analyse de Données • Nov 2023 - Fév 2024</p>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <p class="project-description">
+                                Application d'analyse et de visualisation de données permettant l'exploration interactive de grands ensembles de données. Intégration d'algorithmes de data mining et de techniques de machine learning pour extraire des insights pertinents.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Data Mining</span>
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Visualisation</span>
+                                <span class="tag">Python</span>
+                            </div>
+                            <a href="https://github.com/Medlemin14/DataMineSynergy-App" target="_blank" class="project-link">
+                                <i class="fab fa-github"></i>
+                                Voir le code source
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expériences Section -->
+        <section id="experiences" class="content-section">
+            <div class="container">
+                <h2 class="page-title">Expériences Professionnelles</h2>
+                <div class="experience-card">
+                    <div class="experience-header">
+                        <i class="fas fa-chart-line experience-icon green"></i>
+                        <div>
+                            <h3 class="experience-title">
+                                Stage - Agence Nationale de la Statistique et de l'Analyse Démographique et Economique (ANSADE)
+                            </h3>
+                            <p class="experience-subtitle">Nouakchott, Mauritanie • Juillet 2024 - Août 2024</p>
+                        </div>
+                    </div>
+                    <div class="experience-content">
+                        <ul class="experience-list">
+                            <li>Analyse de la relation entre la pauvreté et la santé en Mauritanie</li>
+                            <li>Utilisation de modèles statistiques et économétriques pour modéliser cette relation</li>
+                        </ul>
+                        <div class="experience-tags">
+                            <span class="tag-outline green">Modélisation économétrique</span>
+                            <span class="tag-outline green">Analyse statistique</span>
+                            <span class="tag-outline green">Recherche socio-économique</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="page-title">Formation</h2>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <div class="education-header">
+                            <i class="fas fa-university education-icon blue"></i>
+                            <div>
+                                <h3 class="education-title">Diplôme d'Ingénieur en Statistique et Ingénierie des Données</h3>
+                                <p class="education-subtitle">École Supérieure Polytechnique - Nouakchott • 2023 - Présent</p>
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <p><strong>Cours principaux :</strong> Statistique avancée, Machine Learning, Économétrie, Ingénierie des données</p>
+                        </div>
+                    </div>
+
+                    <div class="education-card">
+                        <div class="education-header">
+                            <i class="fas fa-calculator education-icon purple"></i>
+                            <div>
+                                <h3 class="education-title">Classes Préparatoires aux Grandes Écoles</h3>
+                                <p class="education-subtitle">Institut Préparatoire - Nouakchott • 2020 - 2023</p>
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <p>Formation intensive en mathématiques, physique et sciences de l'ingénieur</p>
+                        </div>
+                    </div>
+
+                    <div class="education-card">
+                        <div class="education-header">
+                            <i class="fas fa-medal education-icon yellow"></i>
+                            <div>
+                                <h3 class="education-title">Baccalauréat en Mathématiques</h3>
+                                <p class="education-subtitle">El Khiyar - Nouakchott • 2020</p>
+                            </div>
+                        </div>
+                        <div class="education-content">
+                            <p><strong>Mention :</strong> Assez Bien</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compétences Section -->
+        <section id="skills" class="content-section">
+            <div class="container">
+                <h2 class="page-title">Compétences Techniques</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-database skill-icon blue"></i>
+                            <h3 class="skill-title">Data Science</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Scala</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-brain skill-icon purple"></i>
+                            <h3 class="skill-title">Machine Learning</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">Modélisation Prédictive</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-chart-bar skill-icon green"></i>
+                            <h3 class="skill-title">Visualisation de Données</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Matplotlib</span>
+                            <span class="skill-tag">Seaborn</span>
+                            <span class="skill-tag">Plotly</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-code skill-icon orange"></i>
+                            <h3 class="skill-title">Développement Web</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Django</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-calculator skill-icon red"></i>
+                            <h3 class="skill-title">Analyse Statistique</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Régression</span>
+                            <span class="skill-tag">Séries Temporelles</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <i class="fas fa-cogs skill-icon cyan"></i>
+                            <h3 class="skill-title">Ingénierie des Données</h3>
+                        </div>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Nettoyage de données</span>
+                            <span class="skill-tag">Feature Engineering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="languages-section">
+                    <h2 class="section-title">Langues</h2>
+                    <div class="languages-grid">
+                        <div class="language-item">
+                            <h3 class="language-title">🌍 Arabe</h3>
+                            <p class="language-level">Langue maternelle</p>
+                        </div>
+                        <div class="language-item">
+                            <h3 class="language-title">🇫🇷 Français</h3>
+                            <p class="language-level">Professionnel (DELF B2)</p>
+                        </div>
+                        <div class="language-item">
+                            <h3 class="language-title">🇺🇸 Anglais</h3>
+                            <p class="language-level">Intermédiaire</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="soft-skills-section">
+                    <h2 class="section-title">Atouts Professionnels</h2>
+                    <div class="soft-skills">
+                        <span class="soft-skill blue">
+                            <i class="fas fa-users"></i>
+                            Gestion d'équipe
+                        </span>
+                        <span class="soft-skill purple">
+                            <i class="fas fa-lightbulb"></i>
+                            Créativité
+                        </span>
+                        <span class="soft-skill green">
+                            <i class="fas fa-clock"></i>
+                            Ponctualité
+                        </span>
+                        <span class="soft-skill red">
+                            <i class="fas fa-bolt"></i>
+                            Résolution de problèmes sous pression
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv" class="content-section">
+            <div class="container">
+                <h2 class="page-title">Mon CV</h2>
+                <div class="cv-download-section">
+                    <div class="cv-card">
+                        <h3 class="cv-title">CV Complet</h3>
+                        <p class="cv-description">Vous pouvez consulter ou télécharger mon CV complet ici</p>
+                        <a href="cv-mohamed-lemine.pdf" target="_blank" class="download-btn">
+                            <i class="fas fa-download"></i>
+                            Télécharger mon CV PDF
+                        </a>
+                    </div>
+                </div>
+
+                <div class="cv-preview">
+                    <h3 class="section-title">Aperçu du CV</h3>
+                    <div class="cv-embed">
+                        <iframe src="cv-mohamed-lemine.pdf" width="100%" height="500px"></iframe>
+                    </div>
+                </div>
+
+                <div class="references-section">
+                    <h3 class="section-title">Références</h3>
+                    <div class="references-grid">
+                        <div class="reference-card">
+                            <div class="reference-header">
+                                <i class="fas fa-user reference-icon blue"></i>
+                                <div>
+                                    <h4 class="reference-name">Sidi BIHA</h4>
+                                    <p class="reference-position">
+                                        Directeur du département Statistique et Ingénierie des Données<br>
+                                        École Supérieure Polytechnique
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="reference-contact">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <span class="hash">#</span>
+                                    <a href="mailto:sidi.biha@esp.mr">sidi.biha@esp.mr</a>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <a href="tel:+22226340338">+222 26 34 03 38</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reference-card">
+                            <div class="reference-header">
+                                <i class="fas fa-user reference-icon green"></i>
+                                <div>
+                                    <h4 class="reference-name">Abou DIENG</h4>
+                                    <p class="reference-position">
+                                        Professeur<br>
+                                        École Supérieure Polytechnique
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="reference-contact">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <a href="mailto:abou.dieng@esp.mr">abou.dieng@esp.mr</a>
+                                </div>
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <a href="tel:+22246722143">+222 46 72 21 43</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mohamed Lemine Mohamed. Tous droits réservés.</p>
+            <p>CV en ligne créé pour GitHub Pages</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
